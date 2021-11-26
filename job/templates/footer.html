@@ -1,0 +1,32 @@
+{% load static %}
+
+<div class= "mt-3" style = "background-color : black ; width:100% ; height:350px">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-3">
+           <h3 class="text-white">Contact Information</h3>
+            <p style="color:yellow ; font-size : 18px"><i class="fa fa-map-marker text-danger"></i> Bridgefield Apartment, Dublin 09</p>
+            <p style="color:yellow ; font-size : 18px"><i class="fa fa-envelope text-danger"></i> dublinbusiness@gmail.com</p>
+            <p style="color:yellow ; font-size : 18px"><i class="fa fa-mobile text-danger"></i> P: +353 999999999 / +353 90000009</p>
+            <p style="color:yellow ; font-size : 18px"><i class="fa fa-globe text-danger"></i> W: www.myjobportal1.com</p>
+        </div>
+
+        <div class="col-md-4 mt-3">
+            <h3 class="text-white">Online Placement</h3>
+            <p style="color:yellow ; font-size : 18px">Our website deals in all types of jobs available. This is a platform for both job givers and job seekers. Here we provide an easy approach to give and get job.</p>
+
+        </div>
+
+
+        <div class="col-md-4 mt-3">
+            <h3 class="text-white">Newsletter</h3>
+            <p style="color:yellow ; font-size : 18px">If you want the any extra information then send me your email id</p>
+            <form method ="post" class="form-inline">
+             {% csrf_token %}
+                <input type="email" name="emailid" placeholder="Email ID" required class="form-control mr-2">
+                <input type="submit" value="Send" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+</div>
+</div>
